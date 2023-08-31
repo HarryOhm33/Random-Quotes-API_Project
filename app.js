@@ -5,6 +5,14 @@ let qBox = document.querySelector("#q-box");
 let pQuote = document.querySelector("#quote");
 let pAuthor = document.querySelector("#author");
 
+btn.addEventListener("mousedown", () => {
+  btn.classList.add("btn-click");
+});
+
+btn.addEventListener("mouseup", () => {
+  btn.classList.remove("btn-click");
+});
+
 btn.addEventListener("click", async () => {
   await getQuote();
   qBox.classList.remove("d-none");

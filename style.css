@@ -1,11 +1,12 @@
 body {
   text-align: center;
-  background: url(https://wallpaperset.com/w/full/b/c/c/413012.jpg);
-  background-size: cover;
+  background: url(background.jpeg);
+  background-repeat: no-repeat;
+  background-size: 90rem;
 }
 
 #p-head {
-  font-size: 40px;
+  font-size: 2.5rem;
   color: red;
   text-decoration: solid 5px black underline;
 }
@@ -26,12 +27,15 @@ body {
   font-size: 30px;
   font-weight: 700;
   color: orangered;
-  background: url(https://wallpapers.com/images/featured/dark-floral-63tgui541zr7652p.jpg);
-  background-size: cover;
+  background: url(boxbg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
   box-shadow: 0px 0px 20px white;
 }
 
 .q-generator {
+  height: 26px;
+  width: 122px;
   font-size: 15px;
   font-weight: 700;
   padding: 5px;
@@ -44,11 +48,40 @@ body {
 .r-button {
   position: absolute;
   top: 15px;
-  right: 200px;
+  right: 5%;
 }
 
-#author {
-  position: relative;
-  left: 50px;
-  bottom: 0px;
+.btn-click {
+  height: 24px;
+  width: 120px;
+  margin-top: 1px;
+  background-color: rgba(255, 235, 205, 0.568);
+}
+
+@media (max-width: 760px) {
+  .r-button {
+    position: static;
+  }
+}
+
+.footer {
+  height: fit-content;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: grey;
+}
+
+.footer p {
+  margin: 1px;
+}
+
+.footer a {
+  color: blue;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline solid blue;
 }
